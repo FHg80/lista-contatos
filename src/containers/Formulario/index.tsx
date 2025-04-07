@@ -34,17 +34,19 @@ const Formulario = () => {
           value={nome}
           onChange={({ target }) => setNome(target.value)}
           type="text"
-          placeholder="Título"
+          placeholder="Nome"
         />
         <Campo
           value={telefone}
           onChange={({ target }) => setTelefone(target.value)}
-          placeholder="Descrição da tarefa"
+          placeholder="Telefone"
+          type="number"
         />
         <Campo
           value={email}
           onChange={({ target }) => setEmail(target.value)}
-          placeholder="Descrição da tarefa"
+          placeholder="Email"
+          type="email"
         />
         <BotaoSalvar type="submit">Cadastrar</BotaoSalvar>
       </Form>
